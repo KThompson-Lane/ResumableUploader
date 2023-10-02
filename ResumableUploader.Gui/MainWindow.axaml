@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ResumableUploader.Gui.MainWindow"
+        Title="ResumableUploader.Gui">
+    <Panel>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="25">
+            <Button Name="FileSelector" Click="ChooseFile">Choose file</Button>
+            <Button Name="StartUpload" Click="StartUpload_OnClick">Start upload</Button>
+            <ProgressBar Name="UploadProgress" Height="25" Minimum="0" Maximum="1"></ProgressBar>
+            <Button Name="PauseUpload" Click="PauseUpload_OnClick" >Pause upload</Button>
+            <Button Name="ResumeUpload" Click="ResumeUpload_OnClick" >Resume upload</Button>
+        </StackPanel>
+    </Panel>
+</Window>
